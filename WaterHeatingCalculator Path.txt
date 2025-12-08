@@ -1,0 +1,32 @@
+# Water Heating Energy Calculator
+
+## Overview
+A Java command-line program that calculates the energy needed to heat water from an initial temperature to a final temperature using the specific heat formula.
+
+## Formula
+```
+Q = waterMass × (finalTemperature - initialTemperature) × 4184
+```
+
+Where:
+- **waterMass**: Weight of water in kilograms (kg)
+- **initialTemperature**: Starting temperature in Celsius (°C)
+- **finalTemperature**: Target temperature in Celsius (°C)
+- **Q**: Energy result in Joules (J)
+- **4184**: Specific heat capacity of water (J/kg·°C)
+
+## How to Run
+The program runs via the configured workflow which compiles and executes the Java file.
+
+## Features
+- Prompts user for water mass, initial temperature, and final temperature
+- Calculates energy using the water heating formula
+- Displays formatted results with units
+- Handles invalid input with error messages
+- Indicates when cooling occurs (negative energy) or no change needed
+
+## Project Structure
+- `WaterHeatingCalculator.java` - Main program file
+
+## Recent Changes
+- **December 08, 2025**: Initial creation of water heating energy calculator
