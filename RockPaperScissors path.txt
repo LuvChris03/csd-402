@@ -1,0 +1,49 @@
+Rock-Paper-Scissors Program Path
+
+Start
+⬇️
+
+Initialize Choices
+
+Map numbers to options: 1 → Rock, 2 → Paper, 3 → Scissors
+⬇️
+
+Computer Makes a Random Choice
+
+Generate random number 1, 2, or 3
+⬇️
+
+Prompt User for Input
+
+Display options (1, 2, 3)
+
+Ask user to enter a number
+⬇️
+
+Validate User Input
+
+If input is not 1, 2, or 3 → Display error and end program
+
+Else → Continue
+⬇️
+
+Display Choices
+
+Show user’s choice and computer’s choice
+⬇️
+
+Determine Winner
+
+If user_choice == computer_choice → Tie
+
+Else if (Rock beats Scissors, Paper beats Rock, Scissors beats Paper) → User wins
+
+Else → Computer wins
+⬇️
+
+Display Result
+
+Print the winner or tie message
+⬇️
+
+End Program
