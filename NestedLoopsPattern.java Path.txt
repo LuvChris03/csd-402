@@ -1,0 +1,34 @@
+NestedLoopsPattern.java Path
+
+public class NestedLoopsPattern {
+    public static void main(String[] args) {
+
+        int rows = 5;
+
+        for (int i = 0; i < rows; i++) {
+
+            // Leading spaces to create the "path" shape
+            for (int s = 0; s < rows - i - 1; s++) {
+                System.out.print("   ");
+            }
+
+            // Descending powers of 2
+            for (int j = i; j >= 0; j--) {
+                System.out.print((int) Math.pow(2, j) + " ");
+            }
+
+            // Ascending powers of 2 (skip the first to avoid repeating 1)
+            for (int j = 1; j <= i; j++) {
+                System.out.print((int) Math.pow(2, j) + " ");
+            }
+
+            // Space before @
+            for (int s = 0; s < rows - i - 1; s++) {
+                System.out.print("   ");
+            }
+
+            System.out.print("@");
+            System.out.println();
+        }
+    }
+}
